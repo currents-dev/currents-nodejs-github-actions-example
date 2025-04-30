@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        shard: [1, 2]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: install currents
+        run: npm install @currents/node-test-reporter @currents/cmd
+
+      - name: Run tests in shard ${{ matrix.shard }}
+        run: node --test --test-reporter @currents/node-test-reporter --test-reporter-destination=./report.xml **.test.mjs --shard=${{ matrix.shard }}/2
+
+      - name: Convert test results to Currents format
+        run: npx currents convert --input-format=junit --input-file=./report.xml --framework=node
+
+      - name: Upload test results to Currents.dev
+        # CURRENTS_RECORD_KEY is a secret stored in the repository settings
+        env:
+          CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
+        run: |
+          npx currents upload --project-id DVKGcA --ci-build-id ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
