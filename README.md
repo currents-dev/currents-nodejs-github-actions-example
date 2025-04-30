@@ -22,3 +22,7 @@ Follow the steps to reproduce this example:
 - 📖 [Currents documentation](https://docs.currents.dev)
 - [`@currents/cmd`](https://docs.currents.dev/resources/reporters/currents-cmd)
 - [`@currents/node-test-reporter`](https://docs.currents.dev/resources/reporters/currents-node-test-reporter)
+
+## Currents application example for a run
+
+![example](image.png)
