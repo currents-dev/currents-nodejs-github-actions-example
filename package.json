@@ -10,8 +10,8 @@
     "build": "echo \"No build specified\" && exit 0"
   },
   "devDependencies": {
-    "@currents/cmd": "*",
-    "@currents/node-test-reporter": "*"
+    "@currents/cmd": "^1.7.1",
+    "@currents/node-test-reporter": "^1.1.0"
   },
   "keywords": [],
   "author": "",

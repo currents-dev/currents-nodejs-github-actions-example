@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites name="root">
-  <testsuite name="file:///tests/annotations.test.mjs" timestamp="2025-04-30T11:25:57.751Z" hostname="Yohays-MacBook-Pro.local" failures="0" skipped="4" time="0.011993">
-    <testcase name="Math Operations &gt; Addition &gt; should return 4 when adding 2 + 2" time="0.00092"/>
-    <testcase name="Math Operations &gt; Addition &gt; should return 0 when adding -2 + 2" time="0.000052">
+  <testsuite name="file:///tests/annotations.test.mjs" timestamp="2025-04-30T12:04:03.317Z" hostname="Yohays-MacBook-Pro.local" failures="0" skipped="4" time="0.0058790000000000005">
+    <testcase name="Math Operations &gt; Addition &gt; should return 4 when adding 2 + 2" time="0.000122"/>
+    <testcase name="Math Operations &gt; Addition &gt; should return 0 when adding -2 + 2" time="0.000036">
       <skipped/>
     </testcase>
-    <testcase name="Math Operations &gt; Addition &gt; should handle floating point addition" time="0.001708">
+    <testcase name="Math Operations &gt; Addition &gt; should handle floating point addition" time="0.00084">
       <skipped type="todo"/>
     </testcase>
-    <testcase name="Math Operations &gt; Subtraction" time="0.000044" testNumber="2">
+    <testcase name="Math Operations &gt; Subtraction" time="0.000036" testNumber="2">
       <skipped/>
     </testcase>
-    <testcase name="Math Operations &gt; Multiplication" time="0.000033" testNumber="3">
+    <testcase name="Math Operations &gt; Multiplication" time="0.00003" testNumber="3">
       <skipped type="todo"/>
     </testcase>
-    <testcase name="Math Operations &gt; Division &gt; should return 2 when dividing 4 / 2" time="0.000062"/>
-    <testcase name="Math Operations &gt; Division &gt; should throw an error when dividing by 0" time="0.000197"/>
+    <testcase name="Math Operations &gt; Division &gt; should return 2 when dividing 4 / 2" time="0.000054"/>
+    <testcase name="Math Operations &gt; Division &gt; should throw an error when dividing by 0" time="0.000169"/>
   </testsuite>
-  <testsuite name="tests/bailout.test.mjs" timestamp="2025-04-30T11:25:57.762Z" hostname="Yohays-MacBook-Pro.local" failures="1" skipped="0" time="0.061041">
-    <testcase name="/Users/ynahmany/Documents/github/currents/currents-nodejs-github-actions-example/tests/bailout.test.mjs" time="0.061041">
+  <testsuite name="tests/edge-cases.test.mjs" timestamp="2025-04-30T12:04:03.323Z" hostname="Yohays-MacBook-Pro.local" failures="1" skipped="0" time="0.035162">
+    <testcase name="/Users/ynahmany/Documents/github/currents/currents-nodejs-github-actions-example/tests/edge-cases.test.mjs" time="0.035162">
       <failure type="testCodeFailure" message="test failed
 {
   &quot;failureType&quot;: &quot;testCodeFailure&quot;,
@@ -37,39 +37,15 @@
 ]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="tests/edge-cases.test.mjs" timestamp="2025-04-30T11:25:57.762Z" hostname="Yohays-MacBook-Pro.local" failures="1" skipped="0" time="0.059246">
-    <testcase name="/Users/ynahmany/Documents/github/currents/currents-nodejs-github-actions-example/tests/edge-cases.test.mjs" time="0.059246">
-      <failure type="testCodeFailure" message="test failed
-{
-  &quot;failureType&quot;: &quot;testCodeFailure&quot;,
-  &quot;cause&quot;: &quot;test failed&quot;,
-  &quot;code&quot;: &quot;ERR_TEST_FAILURE&quot;,
-  &quot;exitCode&quot;: 1,
-  &quot;signal&quot;: null
-}
-"><![CDATA[{
-  "failureType": "testCodeFailure",
-  "cause": "test failed",
-  "code": "ERR_TEST_FAILURE",
-  "exitCode": 1,
-  "signal": null
-}
-]]></failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="file:///tests/hooks.test.mjs" timestamp="2025-04-30T11:25:57.762Z" hostname="Yohays-MacBook-Pro.local" failures="0" skipped="0" time="0.001264">
-    <testcase name="hooks demo" time="0.00099"/>
-    <testcase name="hooks demo &gt; with setup and teardown" time="0.000274"/>
-  </testsuite>
-  <testsuite name="file:///tests/nesting.test.mjs" timestamp="2025-04-30T11:25:57.763Z" hostname="Yohays-MacBook-Pro.local" failures="3" skipped="0" time="0.007678000000000001">
-    <testcase name="Math Operations &gt; Addition &gt; should return 5 when adding 2 and 3" time="0.000201"/>
-    <testcase name="Math Operations &gt; Addition &gt; should return 0 when adding -1 and 1" time="0.000681"/>
-    <testcase name="Math Operations &gt; Subtraction &gt; should return 1 when subtracting 3 from 4" time="0.000134"/>
-    <testcase name="Math Operations &gt; Subtraction &gt; should return -2 when subtracting 3 from 1" time="0.000034"/>
+  <testsuite name="file:///tests/nesting.test.mjs" timestamp="2025-04-30T12:04:03.324Z" hostname="Yohays-MacBook-Pro.local" failures="3" skipped="0" time="0.0062900000000000005">
+    <testcase name="Math Operations &gt; Addition &gt; should return 5 when adding 2 and 3" time="0.000174"/>
+    <testcase name="Math Operations &gt; Addition &gt; should return 0 when adding -1 and 1" time="0.000424"/>
+    <testcase name="Math Operations &gt; Subtraction &gt; should return 1 when subtracting 3 from 4" time="0.000125"/>
+    <testcase name="Math Operations &gt; Subtraction &gt; should return -2 when subtracting 3 from 1" time="0.000035"/>
     <testcase name="Math Operations &gt; Multiplication &gt; should return 6 when multiplying 2 and 3" time="0.000052"/>
-    <testcase name="Math Operations &gt; Multiplication &gt; should return 0 when multiplying any number by 0" time="0.000039"/>
-    <testcase name="Math Operations &gt; Division &gt; should return 2 when dividing 6 by 3" time="0.00005"/>
-    <testcase name="Math Operations &gt; Division &gt; should throw an error when dividing by 0" time="0.000423">
+    <testcase name="Math Operations &gt; Multiplication &gt; should return 0 when multiplying any number by 0" time="0.000037"/>
+    <testcase name="Math Operations &gt; Division &gt; should return 2 when dividing 6 by 3" time="0.000048"/>
+    <testcase name="Math Operations &gt; Division &gt; should throw an error when dividing by 0" time="0.000398">
       <failure type="testCodeFailure" message="Missing expected exception.
 {
   &quot;failureType&quot;: &quot;testCodeFailure&quot;,
@@ -94,16 +70,13 @@
 ]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="file:///tests/retries.test.mjs" timestamp="2025-04-30T11:25:57.769Z" hostname="Yohays-MacBook-Pro.local" failures="0" skipped="0" time="0.000884">
-    <testcase name="retrying flaky test" time="0.000884"/>
-  </testsuite>
-  <testsuite name="file:///tests/simple.test.mjs" timestamp="2025-04-30T11:25:57.769Z" hostname="Yohays-MacBook-Pro.local" failures="2" skipped="0" time="0.005664">
-    <testcase name="Math operations - addition" time="0.000522"/>
-    <testcase name="Math operations - subtraction" time="0.000045"/>
-    <testcase name="Math operations - multiplication" time="0.00004"/>
-    <testcase name="Math operations - division" time="0.000037"/>
+  <testsuite name="file:///tests/simple.test.mjs" timestamp="2025-04-30T12:04:03.325Z" hostname="Yohays-MacBook-Pro.local" failures="2" skipped="0" time="0.002782">
+    <testcase name="Math operations - addition" time="0.000508"/>
+    <testcase name="Math operations - subtraction" time="0.000044"/>
+    <testcase name="Math operations - multiplication" time="0.000039"/>
+    <testcase name="Math operations - division" time="0.000038"/>
     <testcase name="Math operations - division by zero" time="0.000115"/>
-    <testcase name="Math operations - incorrect addition" time="0.003064">
+    <testcase name="Math operations - incorrect addition" time="0.001363">
       <failure type="testCodeFailure" message="Expected values to be strictly equal:
 
 4 !== 5
@@ -132,7 +105,7 @@
 }
 ]]></failure>
     </testcase>
-    <testcase name="Math operations - incorrect addition &gt; should return 5" time="0.001841">
+    <testcase name="Math operations - incorrect addition &gt; should return 5" time="0.000675">
       <failure type="testCodeFailure" message="Expected values to be strictly equal:
 
 4 !== 5
@@ -162,37 +135,8 @@
 ]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="file:///tests/subtests.test.mjs" timestamp="2025-04-30T11:25:57.769Z" hostname="Yohays-MacBook-Pro.local" failures="0" skipped="2" time="0.027373999999999996">
-    <testcase name="Main test with subtests" time="0.00129"/>
-    <testcase name="Main test with subtests &gt; adds numbers" time="0.000352"/>
-    <testcase name="Main test with subtests &gt; subtracts numbers" time="0.000042"/>
-    <testcase name="Table-driven cases" time="0.000202"/>
-    <testcase name="Table-driven cases &gt; adds 1 + 2 = 3" time="0.000048"/>
-    <testcase name="Table-driven cases &gt; adds 4 + 5 = 9" time="0.000027"/>
-    <testcase name="User actions" time="0.000896"/>
-    <testcase name="User actions &gt; Login" time="0.000561"/>
-    <testcase name="User actions &gt; Login &gt; with correct credentials" time="0.000129"/>
-    <testcase name="User actions &gt; Login &gt; with wrong credentials" time="0.000112"/>
-    <testcase name="User actions &gt; Logout" time="0.000063"/>
-    <testcase name="Async data fetch" time="0.011156"/>
-    <testcase name="Async data fetch &gt; simulated fetch" time="0.011048"/>
-    <testcase name="Options demo" time="0.000577"/>
-    <testcase name="Options demo &gt; concurrent test" time="0.000044"/>
-    <testcase name="Options demo &gt; this is skipped" time="0.000023">
-      <skipped/>
-    </testcase>
-    <testcase name="Options demo &gt; this is not a TODO" time="0.000119"/>
-    <testcase name="Options demo &gt; this is a TODO" time="0.000024">
-      <skipped type="todo"/>
-    </testcase>
-    <testcase name="Setup example" time="0.000208"/>
-    <testcase name="Setup example &gt; uses sharedValue" time="0.000092"/>
-    <testcase name="Setup example &gt; still has access" time="0.000028"/>
-    <testcase name="Early exit example" time="0.000301"/>
-    <testcase name="Early exit example &gt; initial check" time="0.000032"/>
-  </testsuite>
-  <testsuite name="file:///tests/timeout.test.mjs" timestamp="2025-04-30T11:25:57.783Z" hostname="Yohays-MacBook-Pro.local" failures="1" skipped="0" time="0.003307">
-    <testcase name="this will timeout" time="0.003307">
+  <testsuite name="file:///tests/timeout.test.mjs" timestamp="2025-04-30T12:04:03.325Z" hostname="Yohays-MacBook-Pro.local" failures="1" skipped="0" time="0.002177">
+    <testcase name="this will timeout" time="0.002177">
       <failure type="cancelledByParent" message="Promise resolution is still pending but the event loop has already resolved
 {
   &quot;failureType&quot;: &quot;cancelledByParent&quot;,
